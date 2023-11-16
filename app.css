@@ -1,0 +1,97 @@
+h1 {
+    margin-top: 0px;
+    margin-bottom: 5px; /* Adjust the spacing as needed */
+    padding: 20px;
+    background: linear-gradient(to bottom, #464646, #333);
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 38px;
+  }
+
+body {
+    background-color: #333; /* Charcoal gray color */
+    color: #fff; /* Text color, you can adjust it as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0; 
+  }
+
+  #formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Add spacing between the form and buttons */
+  }
+
+  #searchForm {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  #searchForm label {
+    margin-right: 10px; /* Add spacing between the label and input */
+  }
+
+  .searchText {
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-right: 10px; /* Add spacing between the label and input */
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #searchForm button[type="submit"] {
+    background-color: #464646; /* Lighter gray background color */
+    color: #fff; /* White text color */
+    border-radius: 5px; /* Border radius for rounded corners */
+    padding: 10px 20px; /* Increase padding for a larger size */
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition effect */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #searchForm button[type="submit"]:hover {
+    background-color: #333; /* Dark gray background color on hover */
+    border-color: #2980b9; /* Dark blue border on hover */
+  }
+
+  #searchInput {
+    margin-right: 3px;
+    border-radius: 5px; /* Border radius for rounded corners */
+  }
+
+  #gifContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px; /* Add some margin to push it below the form */
+  }
+  
+  #gifContainer img {
+    margin: 5px; /* Add spacing between the images */
+    max-height: 250px; /* Set the maximum height for the images */
+    max-width: 100%; /* Ensure images don't stretch and maintain original aspect ratio */
+}
+
+  #removeGifs {
+    background-color: #e74c3c; /* Red background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Border radius for rounded corners */
+    padding: 10px 20px; /* Increase padding for a larger size */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition effect */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #removeGifs:hover {
+    background-color: #c0392b; /* Slightly darker red background color on hover */
+  }
+
+  #searchForm button[type="submit"],
+#removeGifs {
+  font-weight: bold; /* Make the text inside the buttons bold */
+}
